@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/layout/header/Header';
+import { BrowserRouter as Router , Route, Switch, Redirect} from 'react-router-dom';
+import Home from './components/pages/Home/Home';
+import Programs from './components/pages/Programs/Programs';
+import Bachelor from './components/pages/Programs/Bachelor/Bachelor';
+import Masters from './components/pages/Programs/Masters/Masters';
+import Doctorate from './components/pages/Programs/Doctorate/Doctorate';
+import HighMasters from './components/pages/High/Masters/Masters';
+import HighDoctorate from './components/pages/High/Doctorate/Doctorate';
+import HighContact from './components/pages/High/Contact/Contact';
+import Head from './components/pages/Head/Head';
+import Astro from './components/pages/Astro/Astro';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/programs/1" component={Bachelor}/>
+          <Route exact path="/programs/2" component={Masters}/>
+          <Route exact path="/programs/3" component={Doctorate}/>
+          <Route exact path="/highed/masters" component={HighMasters}/>
+          <Route exact path="/highed/doctorate" component={HighDoctorate}/>
+          <Route exact path="/highed/contact" component={HighContact}/>
+          <Route exact path="/head" component={Head}/>
+          <Route exact path="/astro" component={Astro}/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

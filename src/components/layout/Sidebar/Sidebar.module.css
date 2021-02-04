@@ -1,0 +1,17 @@
+.programsidebar {
+    background-color: var(--light-grey);
+    height: 100%;
+    width: 25%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 4rem;
+}
+
+.programstitle {
+    font-size: 1.3rem;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}

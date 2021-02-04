@@ -1,0 +1,26 @@
+.programs {
+    padding-top: 5.25rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.programsidebar {
+    background-color: var(--light-grey);
+    height: 100%;
+    width: 25%;
+}
+
+.programstitle {
+
+}
+
+.programslink {
+
+}
+
+.programslinkactive {
+
+}
