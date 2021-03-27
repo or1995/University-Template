@@ -81,7 +81,7 @@ class Masters extends Component {
                     </tfoot>
                 </table>
             </div>
-                <Sidebar name="الدراسات العليا">
+                <Sidebar className={classes.sidebarhide} name="الدراسات العليا">
                     <NavLink className={classes.programslink} activeClassName={classes.programslinkactive} to="/highed/masters">الماجستير</NavLink>
                     <NavLink className={classes.programslink} activeClassName={classes.programslinkactive} to="/highed/doctorate">الدكتوراه</NavLink>
                     <a className={classes.programslink} href="http://graduatestudies.kau.edu.sa/content.aspx?Site_ID=306&lng=AR&cid=262969">مواعيد مهمة</a>

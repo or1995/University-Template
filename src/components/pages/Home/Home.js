@@ -7,12 +7,6 @@ import axios from 'axios';
 
 
 class Home extends Component {
-    componentDidMount() {
-        axios.get("http://localhost:8000/product/api/productspec/?spectid=1")
-        .then(res => {
-            console.log(res.data);
-        })
-    }
     render() {
         return (
             <div className={classes.home}>
@@ -20,7 +14,7 @@ class Home extends Component {
                     <div className={classes.info}>
                         <h1>كلية العلوم - قسم علوم الفلك والفضاء</h1>
                         <p>يعتبر قسم العلوم الفلكية بجامعة الملك عبدالعزيز أول قسم من نوعه بالمملكة العربية السعودية حيث تم تأسيسه ليكون أحد الأسس المهمة لمواكبة التطورات العلمية والفضائية لبناء أجيال صاعدة تتطلع إليها لتكون حاملة ورائدة لهذا العلم إن شاء الله.</p>
-                        <a className={classes.action} href="#moreinfoloc">
+                        <a className={classes.action} href="#moreinfo">
                             <div className={classes.buttonleft}><h3>نبذة عامة</h3></div>
                             <div className={classes.buttonright}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg></div>
                         </a>
@@ -81,7 +75,7 @@ class Home extends Component {
                         </div>
                     </Message>
                 </div>
-                <div className={classes.top} id="moreinfoloc">
+                <div className={classes.top} id="moreinfo">
                     <div className={classes.info}>
                     <h1>كلية العلوم - قسم علوم الفلك والفضاء</h1>
                         <p>يعتبر قسم العلوم الفلكية بجامعة الملك عبدالعزيز أول قسم من نوعه بالمملكة العربية السعودية حيث تم تأسيسه ليكون أحد الأسس المهمة لمواكبة التطورات العلمية والفضائية لبناء أجيال صاعدة تتطلع إليها لتكون حاملة ورائدة لهذا العلم إن شاء الله. وقد بدأت الدراسات الفلكية في الفصل الدراسي الثاني من عام 1396هـ كشعبة ضمن قسم الفيزياء وكانت تمنح البكالوريوس في تخصص فلك منفرد أو فلك فرعي ثم صدر قرار المجلس الأعلى للجامعات بالموافقة على إنشاء قسم العلوم الفلكية قسم مستقل ويمنح درجة البكالوريوس في التخصص المزدوج فلك/فيزياء وفلك/رياضيات. ومنذ عام 1424هـ بدأ القسم في منح درجة الماجستير بينما بدأ برنامج الدكتوراه مع بداية الفصل الأول من العام 1438/1437 ه. 

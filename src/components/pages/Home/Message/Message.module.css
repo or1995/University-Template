@@ -21,7 +21,7 @@
     width: 12vw;
     height: calc(100% + 5rem);
     background-color: var(--main-color);
-    background-image:  linear-gradient(to bottom, rgba(38,162,69, .9), rgba(38,162,69, .9)), url('/astronomy.jpg');
+    background-image:  linear-gradient(to bottom, rgba(30,133,56, .9), rgba(30,133,56, .9)), url('/astronomy.jpg');
     background-size: cover;
     z-index: 90;
     margin-left: -6rem;
@@ -56,4 +56,40 @@
     z-index: 90;
     margin-right: -6rem;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    .frontright {
+        width: 80vw;
+    }
+    
+    .backright {
+        width: 15vw;
+    }
+
+    .frontleft {
+        width: 80vw;
+    }
+    
+    .backleft {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .frontright {
+        width: 90vw;
+    }
+    
+    .backright {
+        width: 25vw;
+    }
+
+    .frontleft {
+        width: 90vw;
+    }
+    
+    .backleft {
+        width: 25vw;
+    }
 }

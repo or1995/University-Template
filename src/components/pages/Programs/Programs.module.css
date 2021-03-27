@@ -13,14 +13,14 @@
     width: 25%;
 }
 
-.programstitle {
-
+@media screen and (max-width: 976px) {
+    .programs {
+        flex-direction: column-reverse;
+    }
 }
 
-.programslink {
-
-}
-
-.programslinkactive {
-
+@media screen and (max-width: 675px) {
+    .programs {
+        padding-top: 4.5rem;
+    }
 }

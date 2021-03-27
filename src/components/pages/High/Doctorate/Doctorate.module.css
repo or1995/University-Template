@@ -152,3 +152,27 @@
     align-items: flex-end;
     justify-content: flex-start;
 }
+
+@media screen and (max-width: 976px) {
+    .programs {
+        flex-direction: column-reverse;
+    }
+
+    .programdetail {
+        height: 100%;
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .programslink, .programslink:visited {
+        font-size: 1rem;
+        margin-right: .5rem;
+        font-family: var(--main-font);
+        color: var(--grey);
+        text-decoration: none;
+    }
+
+    .programslink {
+        display: none;
+    }
+}
